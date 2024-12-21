@@ -1,0 +1,81 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Tài Khoản | QAirline</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>QAirline</h1>
+      </div>
+      <div class="account">
+        <a href="flight-search.html">
+          <img src="return.png" alt="Tài khoản cá nhân" class="account-logo" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="profile">
+        <h2>Thông Tin Tài Khoản</h2>
+        <form id="profile-form">
+          <div class="form-group">
+            <label for="username">Tên người dùng:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nhập tên người dùng"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="age">Tuổi:</label>
+            <input
+              type="age"
+              id="age"
+              name="age"
+              placeholder="Nhập tuổi của bạn"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="sdt">Số điện thoại:</label>
+            <input
+              type="sdt"
+              id="sdt"
+              name="sdt"
+              placeholder="Nhập số điện thoại của bạn"
+              required
+            />
+          </div>
+
+          <button type="submit">Lưu Thông Tin</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 QAirline</p>
+    </footer>
+
+    <script src="profile.js"></script>
+  </body>
+</html>

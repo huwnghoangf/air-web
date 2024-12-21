@@ -1,0 +1,68 @@
+<!-- flight-search.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm Vé Máy Bay | QAirline</title>
+    <link rel="stylesheet" href="flight-search.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>QAirline</h1>
+      </div>
+      <div class="account">
+        <a href="profile.html" id="account-link">
+          <img src="tkcn.png" alt="Tài khoản cá nhân" class="account-logo" />
+        </a>
+        <button id="logout-button">Đăng xuất</button>
+        <!-- Nút Đăng xuất -->
+      </div>
+    </header>
+
+    <main>
+      <section class="flight-search">
+        <h2>Tìm Vé Máy Bay</h2>
+        <form id="flight-search-form">
+          <div class="form-group">
+            <label for="departure">Điểm đi:</label>
+            <input
+              type="text"
+              id="departure"
+              name="departure"
+              placeholder="Nhập điểm đi"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="destination">Điểm đến:</label>
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="Nhập điểm đến"
+              required
+            />
+          </div>
+
+          <button type="submit">Tìm Vé</button>
+        </form>
+      </section>
+
+      <section id="flight-results" style="display: none">
+        <h2>Chuyến Bay</h2>
+        <div id="flight-list">
+          <!-- Các chuyến bay sẽ được hiển thị ở đây -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 QAirline</p>
+    </footer>
+
+    <script src="flight-search.js"></script>
+  </body>
+</html>

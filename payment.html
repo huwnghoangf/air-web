@@ -1,0 +1,68 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán | QAirline</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>QAirline</h1>
+      </div>
+      <div class="account">
+        <a href="profile.html" id="account-link">
+          <img src="tkcn.png" alt="Tài khoản cá nhân" class="account-logo" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="payment">
+        <h2>Thông Tin Thanh Toán</h2>
+
+        <!-- Hiển thị thông tin chuyến bay và loại vé -->
+        <p><strong>Chuyến bay:</strong> <span id="payment-flight"></span></p>
+        <p><strong>Loại vé:</strong> <span id="payment-class"></span></p>
+
+        <!-- Chọn số lượng vé -->
+        <div class="form-group">
+          <label for="ticket-quantity">Số lượng vé:</label>
+          <input type="number" id="ticket-quantity" min="1" value="1" />
+        </div>
+
+        <!-- Chọn chỗ ngồi -->
+        <div class="form-group">
+          <label for="seat-type">Chọn chỗ ngồi:</label>
+          <select id="seat-type">
+            <option value="Cửa sổ">Cửa sổ</option>
+            <option value="Lối đi">Lối đi</option>
+            <option value="Giữa">Giữa</option>
+          </select>
+        </div>
+
+        <!-- Tổng giá trị -->
+        <div id="total-price">
+          <p><strong>Tổng giá:</strong> <span id="price-display"></span></p>
+        </div>
+
+        <!-- Nút thanh toán -->
+        <button id="pay-button">Thanh Toán</button>
+      </section>
+
+      <!-- Thanh toán thành công (ẩn ban đầu) -->
+      <section id="payment-success" style="display: none">
+        <h2>Thanh Toán Thành Công</h2>
+        <p>Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 QAirline</p>
+    </footer>
+
+    <script src="payment.js"></script>
+  </body>
+</html>
